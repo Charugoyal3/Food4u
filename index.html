@@ -8,6 +8,7 @@
   <link rel=" stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Maiden+Orange&family=Playfair+Display+SC:wght@400;700;900&family=Red+Rose:wght@400;700&display=swap"
     rel="stylesheet">
@@ -73,14 +74,15 @@
 
   </section>
 
-  <section class="destinations inline-photo show-on-scroll">
+  <section class="destinations" data-aos="fade-up" data-aos-duration="2000">
 
     <h3 class="title inline-photo show-on-scroll">CAROUSELS</h3>
     <p>Order food online from restaurants and get it delivered by us. Serving in Bangalore, Chennai, Hyderabad, Kolkata,
       Delhi, Odisha, Karnataka, Visakhapatnam</p>
     <hr>
 
-    <div class="container inline-photo show-on-scroll">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000">
+
       <div class="card-deck">
         <div class="card">
           <center><img class="card-img-top circular--landscape"
@@ -130,7 +132,7 @@
 
 
 
-  <section class="destinations bg-light  inline-photo show-on-scroll">
+  <section class="destinations bg-light" data-aos="fade-up" data-aos-duration="2000">
     <!-- <div style="margin-top:-11rem;"></div> -->
     <h3 class="title">UPCOMING EVENTS</h3>
     <p>Order food online from restaurants and get it delivered by us. Serving in Bangalore, Chennai, Hyderabad, Kolkata,
@@ -139,7 +141,7 @@
   </section>
   <div style="margin-top:-11rem;"></div>
 
-  <div class="project-carousel bg-light">
+  <div class="project-carousel bg-light" data-aos="fade-up" data-aos-duration="2000">
     <div class="project-strip">
       <div class="project"><img src="http://unsplash.it/578/360/?image=26&amp;blur" alt="" /></div>
       <div class="project"><img src="http://unsplash.it/578/360/?image=39&amp;blur" alt="" /></div>
@@ -168,12 +170,12 @@
   </div>
 
 
-  <section class="destinations inline-photo show-on-scroll">
-    <h3 class="title">Menu</h3>
+  <section class="destinations" data-aos="fade-up" data-aos-duration="2000">
+    <h3 class=" title">Menu</h3>
     <p>Order food online from restaurants and get it delivered by us. Serving in Bangalore, Chennai, Hyderabad, Kolkata,
       Delhi, Odisha, Karnataka, Visakhapatnam</p>
     <hr>
-    <ul class="grid">
+    <ul class="grid" data-aos="fade-up" data-aos-duration="2000">
       <li class="small" id="i01">
         <div class="layer">
           <div class="top-left">Pizza</div>
@@ -198,13 +200,13 @@
   </section>
 
 
-  <section class="destinations bg-light ">
+  <section class="destinations bg-light" data-aos="fade-up" data-aos-duration="2000">
     <!-- <div style="margin-top:-11rem;"></div> -->
     <h3 class="title">Place Your Order</h3>
     <p>Order food online from restaurants and get it delivered by us. Serving in Bangalore, Chennai, Hyderabad, Kolkata,
       Delhi, Odisha, Karnataka, Visakhapatnam</p>
     <hr>
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up" data-aos-duration="2000">
       <div class="row d-flex justify-content-center p-0">
         <div class="col-12 col-md-6 "><input type="text" placeholder="Firstname" class="form"></div>
         <div class="col-12 col-md-6 "><input type="text" placeholder="Email" class="form"></div>
@@ -217,8 +219,8 @@
   </section>
 
 
-  <div class="hm-gradient ">
-    <main class="bg-info">
+  <div class="hm-gradient" data-aos=" fade-up" data-aos-duration="2000">
+    <main class=" bg-info" data-aos="fade-up" data-aos-duration="2000">
       <div class="container mt-4 ">
         <div class="row">
           <div class="col-md-12">
@@ -296,52 +298,14 @@
     </main>
 
   </div>
-  <script>
-    // Detect request animation frame
-    var scroll = window.requestAnimationFrame ||
-      // IE Fallback
-      function (callback) { window.setTimeout(callback, 1 / 6670) };
-    var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
-    function loop() {
-
-      Array.prototype.forEach.call(elementsToShow, function (element) {
-        if (isElementInViewport(element)) {
-          element.classList.add('is-visible');
-        }
-      });
-
-      scroll(loop);
-    }
-
-    // Call the loop for the first time
-    loop();
-
-    // Helper function from: http://stackoverflow.com/a/7557433/274826
-    function isElementInViewport(el) {
-      // special bonus for those using jQuery
-      if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-      }
-      var rect = el.getBoundingClientRect();
-      return (
-        (rect.top <= 0
-          && rect.bottom >= 0)
-        ||
-        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-        ||
-        (rect.top >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-      );
-    }
-  </script>
 
   <!-- Javascript  -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -354,6 +318,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
   <script src="./script.js"></script>
   <script src="js/animation.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
