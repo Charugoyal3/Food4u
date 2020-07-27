@@ -58,21 +58,13 @@ body {
     font-family: 'Maiden Orange', cursive;
     font-weight: 700;
     font-size: 1rem;
-    margin: 0;
-    line-height: 0;
+    line-height: 3vw;
 }
 
 #c2 {
     font-family: 'Maiden Orange', cursive;
     font-weight: 700;
     font-size: 2rem;
-    padding-top: 0;
-    margin-top: -2em;
-    ;
-}
-
-#contact {
-    margin-top: -5em;
 }
 
 #h3 {
@@ -89,7 +81,7 @@ a {
     font-family: 'Red Rose', cursive;
     font-size: 2rem;
     list-style: none;
-    margin-right: -16em;
+    margin-right: -4em;
 }
 
 .nav-item {
@@ -122,45 +114,53 @@ a {
 }
 
 .content {
-
-    position: relative;
-    margin-top: 55px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* height: 682px; */
-    width: 100%;
-    /* padding: 90px; */
     animation: 2s moveup 0s forwards;
-    /* background: red; */
-}
-
-.item1 {
-
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 40%;
-    margin-top: -2.4rem;
+    align-items: left;
 }
 
-.item1 h1 {
+.content h1 {
     font-family: 'Red Rose', cursive;
     font-size: 4rem;
 }
 
-.item1.btn {
-    width: 40%;
+.btn4 {
+    width: 33%;
+    background-color: #554a4a;
+    color: white;
+    cursor: pointer;
+    padding: 18px 100px;
+    border-radius: 10px;
 }
 
-.item1 h3 {
+.btn4:hover {
+    width: 33%;
+    background-color: #8b8686;
+    color: white;
+    cursor: pointer;
+    padding: 18px 100px;
+    border-radius: 10px;
+}
+
+.btn4:active {
+    width: 33%;
+    background-color: #2E2E2E;
+    color: white;
+    cursor: pointer;
+    padding: 18px 100px;
+    border-radius: 10px;
+
+
+}
+
+.content h3 {
     font-family: 'Leckerli One', cursive;
     font-size: 3rem;
 }
 
-.item1 hr {
+.content hr {
     height: 3px;
     width: 60%;
     background-color: grey;
@@ -186,23 +186,6 @@ a {
     #c2 {
         font-size: 2rem;
     }
-
-    .content {
-        justify-content: start;
-        height: 621px;
-        margin-top: 90px;
-    }
-
-    .item1 {
-        width: 40%;
-    }
-
-    .cropped {
-        right: 1%;
-        width: 65%;
-    }
-
-
 
     @keyframes slidein {
         100% {
@@ -283,8 +266,12 @@ section p {
 }
 
 @media (max-width: 700px) {
-    .content>div {
-        width: 25rem;
+    .content.h3 {
+        font-size: 1.5rem;
+    }
+
+    .content.h1 {
+        font-size: 1.5rem;
     }
 
     .card-text {
@@ -317,7 +304,7 @@ section p {
 
     }
 
-    .content {
+    /* .content {
         padding: 1px;
         height: 100%;
         display: flex;
@@ -330,7 +317,7 @@ section p {
         align-self: center;
         height: 20rem;
         width: 13rem;
-    }
+    } */
 
     .card-text {
         font-size: 1.5rem;
@@ -468,8 +455,8 @@ h6 a {
 }
 
 .project-screen {
-    width: 768px;
-    height: 400px;
+    width: 102vw;
+    height: 52vh;
     position: absolute;
     left: 0;
     right: 0;
@@ -482,8 +469,8 @@ h6 a {
     position: absolute;
     left: 0;
     right: 0;
-    width: 578px;
-    height: 361px;
+    width: 500px;
+    height: 333px;
     margin: 32px auto 0;
     z-index: 1;
     background-color: #333;
@@ -608,4 +595,30 @@ ul li .top-left3 {
     left: 19px;
     width: 89%;
     height: 89%;
+}
+
+.tags {
+    /* height: 95vh;
+    width: 96vw; */
+    display: flex;
+    flex-direction: row;
+}
+
+.tags .icon {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+
+}
+
+.tags .contact_p {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    align-content: center;
 }
